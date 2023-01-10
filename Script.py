@@ -38,7 +38,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/DQ_The_File_Donor_Updates)</code>
+<code>[Button Text](buttonurl:https://t.me/Tech_Masterz)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
@@ -186,17 +186,19 @@ Nᴀᴍᴇ - {}"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🎬 Title:</b> <a href={url}>{title}</a> [{year}] —<b>{kind}</b>
+
 <b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>
-<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>
-<b>🗳️ Votes:</b> <code>{votes}</code> 
+<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)
+
 <b>🎭 Genres:</b> #{genres}
 <b>📀 Runtime:</b> <code>{runtime} minutes</code>
+
 <b>☀️ Languages:</b> #{languages}
 <b>🌎 Country of Origin:</b> #{countries}
 <b>🎥 Director:</b> {director}
 
 <b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 hours to avoid copyright issues.</s>"""
-    
+
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
     
