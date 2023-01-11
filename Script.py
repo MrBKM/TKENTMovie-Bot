@@ -1,23 +1,23 @@
 class script(object):
-    START_TXT = """<b><i>Hᴇʟʟᴏ 👋 {},
+    START_TXT = """<b>Hᴇʟʟᴏ 👋 {},
 
 I Aᴍ Nᴏᴛ Oɴʟʏ <a href="https://t.me/newitsunique2_bot">Tᴋ Eɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ Bᴏᴛ</a> Tᴏ Assɪsᴛ Yᴏᴜ Bᴜᴛ Aʟsᴏ Eᴍᴘʟᴏʏᴇᴅ Aᴛ <a href="https://t.me/Tk_movies_adda">Tᴋ Eɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ</a> Gʀᴏᴜᴘ Bʏ <a href="https://t.me/TGDragonIDM">Dʀᴀɢᴏɴ</a> Sᴏ Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mʏ Sᴇʀᴠɪᴄᴇ Bʏ Aᴅᴅɪɴɢ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Sᴏ Dᴏɴ'ᴛ Wᴀsᴛᴇ Yᴏᴜʀ Tɪᴍᴇ & Dᴀᴛᴀ 😉
 
-Bᴇᴛᴛᴇʀ Yᴏᴜ Cʟɪᴄᴋ Bᴇʟᴏᴡ & Jᴏɪɴ <a href="https://t.me/Tk_movies_adda">Tᴋ Eɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ & Fᴇᴇʟ Tʜᴇ Exᴘᴇʀɪᴇɴᴄᴇ Oғ Dᴏᴡɴʟᴏᴀᴅɪɴɢ Uɴʟɪᴍɪᴛᴇᴅ Mᴏᴠɪᴇs/Sᴇʀɪᴇs ✅
+Bᴇᴛᴛᴇʀ Yᴏᴜ Cʟɪᴄᴋ Bᴇʟᴏᴡ & Jᴏɪɴ <a href="https://t.me/Tk_movies_adda">Tᴋ Eɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ</a> & Fᴇᴇʟ Tʜᴇ Exᴘᴇʀɪᴇɴᴄᴇ Oғ Dᴏᴡɴʟᴏᴀᴅɪɴɢ Uɴʟɪᴍɪᴛᴇᴅ Mᴏᴠɪᴇs/Sᴇʀɪᴇs ✅
 
-Fᴏʀ Mᴏʀᴇ Iɴғᴏʀᴍᴀᴛɪᴏɴ Cʟɪᴄᴋ ℹ️ Hᴇʟᴘ</b></i>"""
+Fᴏʀ Mᴏʀᴇ Iɴғᴏʀᴍᴀᴛɪᴏɴ Cʟɪᴄᴋ ℹ️ Hᴇʟᴘ</b>"""
 
-    HELP_TXT = """<b><i>Hᴇʟʟᴏ 👋 {},
+    HELP_TXT = """<b>Hᴇʟʟᴏ 👋 {},
 
-I ᴄᴀɴ Gᴜɪᴅᴇ Yᴏᴜ Tʜʀᴏᴜɢʜ Aʟʟ Oғ <a herf="https://t.me/newitsunique2_bot">Tᴋ Eɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ Bᴏᴛ</a>'s Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs & Hᴏᴡ Tᴏ Pʀᴏᴘᴇʀʟʏ Usᴇ Tʜᴇᴍ. Usᴇ Tʜᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Nᴀᴠɪɢᴀᴛᴇ Tʜʀᴏᴜɢʜ Aʟʟ Oғ Tʜᴇ Mᴏᴅᴜʟᴇs.</b></i>"""
+I ᴄᴀɴ Gᴜɪᴅᴇ Yᴏᴜ Tʜʀᴏᴜɢʜ Aʟʟ Oғ <a herf="https://t.me/newitsunique2_bot">Tᴋ Eɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛ Bᴏᴛ</a>'s Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs & Hᴏᴡ Tᴏ Pʀᴏᴘᴇʀʟʏ Usᴇ Tʜᴇᴍ. Usᴇ Tʜᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Nᴀᴠɪɢᴀᴛᴇ Tʜʀᴏᴜɢʜ Aʟʟ Oғ Tʜᴇ Mᴏᴅᴜʟᴇs.</b>"""
 
-    ABOUT_TXT = """<b><i>✯ Mʏ Nᴀᴍᴇ: {}
+    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
 ✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/TGDragonIDM'>Dʀᴀɢᴏɴ</a>
 ✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
 ✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
 ✯ Bᴏᴛ Sᴇʀᴠᴇʀ: Vᴘs
-✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [Sᴛᴀʙʟᴇ]</b></i>"""
+✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.7.1 [Sᴛᴀʙʟᴇ]</b>"""
 
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
