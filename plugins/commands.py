@@ -74,7 +74,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "❆ Jᴏɪɴ Gʀᴏᴜᴘ ❆", url=invite_link.invite_link
+                    "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
                 )
             ]
         ]
@@ -88,7 +88,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**♦️ READ THIS INSTRUCTION ♦️\n\n🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Group First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈\n\n👇 JOIN GROUP & TRY AGAIN 👇**",
+            text="**♦️ Rᴇᴀᴅ Tʜɪs Iɴsᴛʀᴜᴄᴛɪᴏɴs ♦️\n\n 🗣 Iɴ Oʀᴅᴇʀ Tᴏ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛᴇᴅ Bʏ Yᴏᴜ ɪɴ Oᴜʀ Gʀᴏᴜᴘs, Yᴏᴜ Wɪʟʟ Hᴀᴠᴇ Tᴏ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ Fɪʀsᴛ. Aғᴛᴇʀ Tʜᴀᴛ, Tʀʏ Aᴄᴄᴇssɪɴɢ Tʜᴀᴛ Mᴏᴠɪᴇ Aɢᴀɪɴ Fʀᴏᴍ Oᴜʀ Gʀᴏᴜᴘ. I'ʟʟ Sᴇɴᴅ Yᴏᴜ Tʜᴀᴛ Mᴏᴠɪᴇ Pʀɪᴠᴀᴛᴇʟʏ 🙈\n\n👇 Jᴏɪɴ Cʜᴀɴɴᴇʟ & Tʀʏ Aɢᴀɪɴ 👇**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -155,10 +155,12 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('🎥 Tᴋ HD Hᴜʙ', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                          InlineKeyboardButton('🎥 Tᴋ HP Hᴜʙ', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                        ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/TGDragonIDM")
+                          InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
+                       ],[
+                          InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
                          ]
                         ]
                     )
@@ -174,10 +176,12 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('🎥 Tᴋ HD Hᴜʙ', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                          InlineKeyboardButton('🎥 Tᴋ HP Hᴜʙ', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                        ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/TGDragonIDM")
+                          InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
+                       ],[
+                          InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
                          ]
                         ]
                     )
@@ -245,10 +249,12 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('🎥 Tᴋ HD Hᴜʙ', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                      InlineKeyboardButton('🎥 Tᴋ HP Hᴜʙ', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
-                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/TGDragonIDM")
+                      InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
+                   ],[
+                      InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
                      ]
                     ]
                 )
@@ -288,15 +294,16 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+              InlineKeyboardButton('🎥 Tᴋ HD Hᴜʙ', url='https://t.me/+4yoDh0x8j80wOTVl'),
+              InlineKeyboardButton('🎥 Tᴋ HP Hᴜʙ', url='https://t.me/+oRO-NDOF4LU4ZjRl')
            ],[
-              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/TGDragonIDM")
+              InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
+           ],[
+              InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
              ]
             ]
         )
-    )
-                    
+    )                    
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
