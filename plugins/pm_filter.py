@@ -37,7 +37,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message(filters.group & filters.text & filters.chat(-1001510283128) & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
         await global_filters(client, message)
@@ -240,7 +240,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("🤖 Cʜᴇᴄᴋ Bᴏᴛ PM 🤖", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton(text="ミ★ TK ENTERTAINMENT ★彡", callback_data="tk")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -1198,6 +1198,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
+    elif "scst" in query.data:
+        return await query.answer("""
+» HERE IS THE SOLUTION «
+
+☞ Send Me Rs.50/- Per Month With Payment Proof
+
+UPI 🆔 Details
+
+Google pay 📲 joynathnet4@oksbi
+Phonepe 📲 bijoy.nath@ybl
+
+✔️ After Payment Verification Your ID Well Be Freed
+""", show_alert=True)   
+
+    elif "tk" in query.data:
+        return await query.answer("""
+ミ★ TK ENTERTAINMENT ★彡
+
+☞ Sᴛᴏʀᴀɢᴇ Oғ Nᴇᴡ & Oʟᴅ Mᴏᴠɪᴇs/Sᴇʀɪᴇs
+☞ Aᴠᴀɪʟᴀʙʟᴇ Iɴ Mᴀɴʏ Sɪᴢᴇs & Lᴀɴɢᴜᴀɢᴇs
+☞ Rᴇᴄᴇɪᴠᴀʙʟᴇ Iɴ Vᴀʀɪᴏᴜs Qᴜᴀʟɪᴛʏ
+
+👑
+『TG』 ཌĐʀᴀɢᴏƝད°ᴵᴰᴹ
+""", show_alert=True)
 
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
@@ -1357,13 +1382,13 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("🤖 Cʜᴇᴄᴋ Bᴏᴛ PM 🤖", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton(text="ミ★ TK ENTERTAINMENT ★彡", callback_data="tk")
     ])
 
     if offset != "":
@@ -1430,86 +1455,33 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}.</b>"
+        cap = f"<b><i>—(••÷[ ıllıllı ꜱᴇʀᴠᴇʀ ᴅᴀᴛᴀ ıllıllı ]÷••)—\n\n㆑ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱: {search}\n☆ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗕𝘆: {message.from_user.mention}\n⌥ 𝗧𝗼𝘁𝗮𝗹 𝗣𝗮𝗴𝗲: 0\nↀ 𝗧𝗼𝘁𝗮𝗹 𝗙𝗶𝗹𝗲𝘀: 0\n〆 𝗛𝗼𝘀𝘁𝗲𝗱 𝗩𝗶𝗮: VPS\n\n※ 𝙋𝙧𝙚𝙨𝙨 𝙏𝙝𝙚 𝘿𝙤𝙬𝙣 𝘽𝙪𝙩𝙩𝙤𝙣𝙨 𝙏𝙤 𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙝𝙚 𝙁𝙞𝙡𝙚\n※ 𝙏𝙝𝙞𝙨 𝙋𝙤𝙨𝙩 𝙒𝙞𝙡𝙡 𝘽𝙚 𝘿𝙚𝙡𝙚𝙩𝙚𝙙 𝘼𝙛𝙩𝙚𝙧 1０ 𝙈𝙞𝙣𝙪𝙩𝙚𝙨</b></i>"
     if imdb and imdb.get('poster'):
         try:
-            if message.chat.id == SUPPORT_CHAT_ID:
-                await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
-            else:
-                hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-                try:
-                    if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hehe.delete()
-                        await message.delete()
-                except KeyError:
-                    grpid = await active_connection(str(message.from_user.id))
-                    await save_group_settings(grpid, 'auto_delete', True)
-                    settings = await get_settings(message.chat.id)
-                    if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hehe.delete()
-                        await message.delete()
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(3600)
+            await hehe.delete()
+            await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-            if message.chat.id == SUPPORT_CHAT_ID:
-                await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
-            else:
-                pic = imdb.get('poster')
-                poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-                try:
-                    if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hmm.delete()
-                        await message.delete()
-                except KeyError:
-                    grpid = await active_connection(str(message.from_user.id))
-                    await save_group_settings(grpid, 'auto_delete', True)
-                    settings = await get_settings(message.chat.id)
-                    if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await hmm.delete()
-                        await message.delete()
+            pic = imdb.get('poster')
+            poster = pic.replace('.jpg', "._V1_UX360.jpg")
+            hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(3600)
+            await hmm.delete()
+            await message.delete()
         except Exception as e:
-            if message.chat.id == SUPPORT_CHAT_ID:
-                await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
-            else:
-                logger.exception(e)
-                fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                try:
-                    if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await fek.delete()
-                        await message.delete()
-                except KeyError:
-                    grpid = await active_connection(str(message.from_user.id))
-                    await save_group_settings(grpid, 'auto_delete', True)
-                    settings = await get_settings(message.chat.id)
-                    if settings['auto_delete']:
-                        await asyncio.sleep(600)
-                        await fek.delete()
-                        await message.delete()
+            logger.exception(e)
+            fek = await message.reply_photo(photo="https://telegra.ph/file/3b990c107bec4568bb7b1.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(3600)
+            await fek.delete()
+            await msg.delete()
     else:
-        if message.chat.id == SUPPORT_CHAT_ID:
-            await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nFᴏʀ Mᴏᴠɪᴇs, Jᴏɪɴ @free_movies_all_languages</b>")
-        else:
-            fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            try:
-                if settings['auto_delete']:
-                    await asyncio.sleep(600)
-                    await fuk.delete()
-                    await message.delete()
-            except KeyError:
-                grpid = await active_connection(str(message.from_user.id))
-                await save_group_settings(grpid, 'auto_delete', True)
-                settings = await get_settings(message.chat.id)
-                if settings['auto_delete']:
-                    await asyncio.sleep(600)
-                    await fuk.delete()
-                    await message.delete()
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/3b990c107bec4568bb7b1.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(3600)
+        await fuk.delete()
+        await msg.delete()
     if spoll:
         await msg.message.delete()
-
 
 async def advantage_spell_chok(client, msg): #modified spell check
     mv_id = msg.id
