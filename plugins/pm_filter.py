@@ -536,10 +536,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                              InlineKeyboardButton('🎥 Tᴋ HD Hᴜʙ', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                              InlineKeyboardButton('🎥 Tᴋ HP Hᴜʙ', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                            ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/TGDragonIDM")
+                              InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
+                           ],[
+                              InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
                              ]
                             ]
                         )
@@ -584,10 +586,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                  InlineKeyboardButton('🎥 Tᴋ HD Hᴜʙ', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                  InlineKeyboardButton('🎥 Tᴋ HP Hᴜʙ', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/TGDragonIDM")
+                  InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
+               ],[
+                  InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
                  ]
                 ]
             )
