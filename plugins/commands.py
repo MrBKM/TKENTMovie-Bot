@@ -160,7 +160,7 @@ async def start(client, message):
                        ],[
                           InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
                        ],[
-                          InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
+                          InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
                          ]
                         ]
                     )
@@ -181,7 +181,7 @@ async def start(client, message):
                        ],[
                           InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
                        ],[
-                          InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
+                          InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
                          ]
                         ]
                     )
@@ -254,7 +254,7 @@ async def start(client, message):
                    ],[
                       InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
                    ],[
-                      InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
+                      InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
                      ]
                     ]
                 )
@@ -299,7 +299,7 @@ async def start(client, message):
            ],[
               InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
            ],[
-              InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
+              InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
              ]
             ]
         )
