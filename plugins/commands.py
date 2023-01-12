@@ -405,7 +405,7 @@ async def delete_all_index(bot, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="CANCEL", callback_data="close_data"
+                        text="CANCEL", callback_data="close"
                     )
                 ],
             ]
