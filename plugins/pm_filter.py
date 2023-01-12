@@ -179,7 +179,7 @@ async def advantage_spoll_choker(bot, query):
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
-    if query.data == "close_data":
+    if query.data == "close":
         await query.message.delete()
     elif query.data == "gfiltersdeleteallconfirm":
         await del_allg(query.message, 'gfilters')
@@ -439,7 +439,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                            ],[
                               InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
                            ],[
-                              InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
+                              InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
                              ]
                             ]
                         )
@@ -489,7 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                ],[
                   InlineKeyboardButton(text="⁉️ Wᴀɴᴛ Tᴏ Sᴀᴠᴇ/Sʜᴀʀᴇ Tʜɪs Fɪʟᴇ", callback_data="scst")
                ],[
-                  InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close_data')
+                  InlineKeyboardButton('❎ Cʟᴏsᴇ Tʜɪs Fɪʟᴇ ❎', callback_data='close')
                  ]
                 ]
             )
@@ -900,7 +900,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
